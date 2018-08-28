@@ -1,3 +1,4 @@
+// Kwame Agyenim-Boateng ID: 10679301
 #include <iostream>
 
 using namespace std;
@@ -6,6 +7,7 @@ int main()
 {
     int x,y;
     bool isPrime = true;
+    // asks for user input
     cout << "Enter a positive integer" << endl;
     cin>>y;
     for(x=2;x<=y/2;x++)
