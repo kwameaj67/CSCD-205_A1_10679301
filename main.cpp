@@ -1,14 +1,12 @@
-// Kwame Agyenim-Boateng ID: 10679301
 #include <iostream>
-
 using namespace std;
-
+// KWAME AGYENIM-BOATENG-10679301
 int main()
-{
+{   // we declare variables
     int x,y;
     bool isPrime = true;
-    // asks for user input
-    cout << "Enter a positive integer" << endl;
+    //asks for user input
+    cout << "Enter a positive integer:";
     cin>>y;
     for(x=2;x<=y/2;x++)
     {
@@ -17,12 +15,15 @@ int main()
             isPrime=false;
             break;
         }
-    }   if(isPrime)
-    {// outputs where a number is prime or not
-        cout << y<< " is a prime number";
-    } else (isPrime)
-    {
-        cout << y<< " is not a prime number";
     }
+     if(y==1)
+    {// outputs where a number is prime or not
+        cout << y<< " is not a prime number.";
+    }
+    else if(isPrime)
+        {
+        cout << y<< " is a prime number.";
+        }else
+        cout << y<< " is not a prime number.";
     return 0;
 }
